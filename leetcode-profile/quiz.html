@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Daily Quiz - LeetCode Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="quiz-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>LeetCode Profile</h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Dashboard</a></li>
+                    <li><a href="#"><i class="fas fa-robot"></i> AI</a></li>
+                    <li><a href="quiz.html" class="active"><i class="fas fa-tasks"></i> Daily Quiz</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="quiz-container">
+                <div class="quiz-header">
+                    <h2>Daily Quiz</h2>
+                    <div class="difficulty-badge easy">Easy</div>
+                </div>
+                
+                <div class="quiz-content">
+                    <div id="question-container">
+                        <h3 id="question-title"></h3>
+                        <p id="question-description"></p>
+                    </div>
+
+                    <div class="answer-container">
+                        <textarea id="answer-input" placeholder="Write your answer here..."></textarea>
+                        <div class="button-group">
+                            <button id="submit-btn" class="primary-btn">Submit</button>
+                            <button id="prev-btn" class="secondary-btn"><i class="fas fa-arrow-left"></i> Previous</button>
+                            <button id="next-btn" class="secondary-btn">Next <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html> 

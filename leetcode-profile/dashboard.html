@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>LeetCode Profile</title>
+    <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>LeetCode Profile</h2>
+      <nav>
+        <ul>
+          <li><a href="dashboard.html" class="active"><i class="fas fa-home"></i> Dashboard</a></li>
+          <li><a href="#"><i class="fas fa-robot"></i> AI</a></li>
+          <li><a href="quiz.html"><i class="fas fa-tasks"></i> Daily Quiz</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- User Profile Header -->
+      <header class="user-profile">
+        <div class="profile-container">
+          <div class="profile-left">
+            <img src="https://via.placeholder.com/80" alt="Profile" class="profile-image">
+            <div class="profile-info">
+              <div class="name-container">
+                <h1 id="username">Guest</h1>
+                <div class="badges">
+                  <span class="badge bronze"><i class="fas fa-medal"></i> Bronze</span>
+                  <span class="badge novice"><i class="fas fa-star"></i> Novice</span>
+                </div>
+              </div>
+              <div class="stats-container">
+                <div class="stat-box">
+                  <p id="streak">Streak: 0 days</p>
+                </div>
+                <div class="stat-box">
+                  <p id="rank">Rank: Unranked</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Dashboard Content -->
+      <div class="dashboard">
+        <!-- Heatmap Section -->
+        <section class="heatmap-section">
+          <h3>Activity Heatmap</h3>
+          <div class="heatmap-container">
+            <div id="heatmap"></div>
+            <div class="heatmap-legend">
+              <span>Less</span>
+              <div class="legend-item"></div>
+              <div class="legend-item level-1"></div>
+              <div class="legend-item level-2"></div>
+              <div class="legend-item level-3"></div>
+              <div class="legend-item level-4"></div>
+              <span>More</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <script src="dashboard.js"></script>
+</body>
+</html>
